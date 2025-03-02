@@ -1,0 +1,16 @@
+{
+    "main.search.label.city": "City",
+    "main.search.label.country": "Country",
+    "main.weather.view.today.weather": "Today's Weather",
+    "main.weather.view.today.temperature": "{temperature}°",
+    "main.weather.view.today.temperature.highLow": "H: {high}° L: {low}°",
+    "main.weather.view.today.weather.location": "{location}, {country}",
+    "main.weather.view.today.weather.timestamp": "{timestamp}",
+    "main.weather.view.today.weather.humidity": "Humidity: {humidity}%",
+    "main.weather.view.today.weather.situation": "{situation}",
+    "main.weather.view.today.searchHistory": "Search History",
+    "main.weather.view.today.searchHistory.location": "{location}, {country}",
+    "main.weather.view.today.searchHistory.timestamp": "{timestamp}",
+    "common.error": "Not found",
+    "common.noRecord": "No Record"
+}
