@@ -30,17 +30,17 @@ const HomePage: React.FC = () => {
             {/** Search container */}
             <Grid2 container sx={{ height: '100%' }} justifyContent={'center'} alignItems={'flex-start'}>
                 <Grid2 size={12} sx={{ mt: 2, display: 'flex', justifyContent: 'center' }}>
-                    <Grid2 container spacing={2} alignItems={'center'} sx={{ width: 700, display: 'flex' }}>
-                        <Grid2 size={5}>
+                    <Grid2 container spacing={1} alignItems={'center'} sx={{ width: 700, display: 'flex' }}>
+                        <Grid2 size={{ xs: 6, sm: 5 }}>
                             <TextInput {...searchCityModel} />
                         </Grid2>
-                        <Grid2 size={5}>
+                        <Grid2 size={{ xs: 6, sm: 5 }}>
                             <TextInput {...searchCountryModel} />
                         </Grid2>
-                        <Grid2 size={1}>
+                        <Grid2 size={{ xs: 2, sm: 1 }}>
                             <CustomIconButton {...searchButtonModel} />
                         </Grid2>
-                        <Grid2 size={1}>
+                        <Grid2 size={{ xs: 2, sm: 1 }}>
                             <CustomIconButton {...clearButtonModel} />
                         </Grid2>
                     </Grid2>
@@ -167,8 +167,8 @@ const HomePage: React.FC = () => {
                                     alt="Cloud Icon"
                                     sx={{
                                         position: 'absolute',
-                                        top: -120,
-                                        right: -50,
+                                        top: -150,
+                                        right: -70,
                                         width: 300,
                                         height: 300
                                     }}

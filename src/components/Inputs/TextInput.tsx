@@ -7,7 +7,7 @@ import { CustomTypography } from '../Typographys/CustomTypography';
 import { ITextInput } from '../../types/CommonTypes';
 
 const StyledTextField = styled(Input)({
-    minWidth: 250,
+    minWidth: 150,
     height: 60,
     borderRadius: 20,
     backgroundColor: 'rgba(255, 255, 255, 0.2)',

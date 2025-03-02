@@ -1,7 +1,7 @@
 /**
  * Search History List Component
  */
-import { ListItem, ListItemText, IconButton, Box } from '@mui/material';
+import { ListItem, ListItemText, IconButton, Box, Grid2 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { CustomTypography } from '../Typographys/CustomTypography';
@@ -27,26 +27,17 @@ function SearchHistoryItem({ location, date, onSearch, onDelete }: ISearchHistor
             }}
         >
             {/* Location and Date */}
-            <ListItemText
-                primary={<CustomTypography {...{ message: location }} />}
-                slotProps={{
-                    primary: {
-                        style: { color: '#5e2ca5', fontWeight: 'bold' }
-                    }
-                }}
-            />
-            <Box>
-                <ListItemText
-                    primary={<CustomTypography {...{ message: date }} />}
-                    slotProps={{
-                        primary: {
-                            style: { color: '#8c72c7' }
-                        }
-                    }}
-                />
-            </Box>
+            <Grid2 container justifyContent="space-between" alignItems="center" sx={{ flexGrow: 1, mr: 1 }}>
+                <Grid2>
+                    <CustomTypography {...{ message: location }} sx={{ fontWeight: '600' }} />
+                </Grid2>
+                <Grid2>
+                    <CustomTypography {...{ message: date }} />
+                </Grid2>
+            </Grid2>
+
             {/* Action Buttons */}
-            <Box sx={{ margin: 1 }}>
+            <Box>
                 <CustomIconButton onClick={onSearch} aria-label="search" sx={{ ...buttonSx, mr: 1 }} icon={<SearchIcon sx={iconSx} />} />
                 <CustomIconButton onClick={onDelete} aria-label="delete" sx={buttonSx} icon={<DeleteIcon sx={iconSx} />} />
             </Box>
